@@ -9,7 +9,7 @@ echo "deb [arch=arm64] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debi
 apt update
 apt install -y docker-ce
 
-usermod -aG docker $USER
+usermod -aG docker $SUDO_USER
 
 systemctl daemon-reload
 systemctl restart docker
