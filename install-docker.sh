@@ -11,7 +11,7 @@ apt install -y docker-ce
 
 usermod -aG docker $SUDO_USER
 
-sudo cat > /etc/docker/daemon.json <<EOF
+cat > /etc/docker/daemon.json <<EOF
 {
   "exec-opts": ["native.cgroupdriver=systemd"],
   "log-driver": "json-file",
