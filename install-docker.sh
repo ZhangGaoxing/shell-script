@@ -19,7 +19,7 @@ cat > /etc/docker/daemon.json <<EOF
     "max-size": "100m"
   },
   "storage-driver": "overlay2",
-  "registry-mirrors": ["https://registry.docker-cn.com", "http://hub-mirror.c.163.com", "https://docker.mirrors.ustc.edu.cn"]
+  "registry-mirrors": ["http://hub-mirror.c.163.com", "https://docker.mirrors.ustc.edu.cn"]
 }
 EOF
 
